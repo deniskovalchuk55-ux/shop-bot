@@ -1,0 +1,15 @@
+app = "shop-bot"
+primary_region = "waw"
+
+[build]
+
+[env]
+
+# Бот працює через polling (не webhook), HTTP-порт не потрібен.
+# Тримаємо 1 машину завжди увімкненою.
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
+
+[processes]
+  app = "node bot.js"
