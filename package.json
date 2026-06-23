@@ -1,0 +1,14 @@
+{
+  "name": "shop-bot",
+  "version": "1.0.0",
+  "description": "Telegram бот: посилання -> пост у канал + база Neon",
+  "main": "bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "pg": "^8.13.1"
+  }
+}
